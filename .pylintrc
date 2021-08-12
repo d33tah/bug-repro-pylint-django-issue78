@@ -1,0 +1,12 @@
+[MESSAGES CONTROL]
+disable=
+  missing-module-docstring,  # we generally don't need to document obvious Django-built-in components to override
+  missing-function-docstring,
+  missing-class-docstring,
+  too-many-ancestors,
+  unused-argument,
+  invalid-name,
+
+[MASTER]
+load-plugins=pylint_django,pylint_django.checkers.migrations
+ignore=lambda_functions
